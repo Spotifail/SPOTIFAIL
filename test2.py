@@ -1,31 +1,36 @@
-import tkinter as tk
-from tkinter import ttk
-import pygame
-import time
+# Imports tkinter 
+from tkinter import *
 
-def update_progress():
-    current_time = pygame.mixer.music.get_pos() // 1000  # Convert milliseconds to seconds
-    progress_var.set(current_time)
-    root.after(1000, update_progress)
+# toplevel window 
+root = Tk() 
 
-def play_music():
-    pygame.mixer.music.load(r"C:\Users\EMANY MAKAP\Desktop\PROJEET N2\music\ene.mp3")  # Remplacez "votre_musique.mp3" par le chemin de votre fichier audio
-    pygame.mixer.music.play()
-    update_progress()
+# label widget 
+label = Label(root, text="LABEL") 
 
-root = tk.Tk()
-root.title("Lecteur Audio")
 
-# Initialisation de Pygame (assurez-vous d'avoir Pygame installé : pip install pygame)
-pygame.mixer.init()
+# Method to make Label(Widget) invisible 
+def hide_label(): 
+	# This will remove the widget 
+	label.pack_forget() 
 
-# Bouton pour démarrer la musique
-play_button = tk.Button(root, text="Play Music", command=play_music)
-play_button.pack(pady=20)
 
-# Barre de progression
-progress_var = tk.IntVar()
-progress_bar = ttk.Progressbar(root, variable=progress_var, maximum=100)
-progress_bar.pack(fill="x", padx=20, pady=10)
+# Method to make Label(widget) visible 
+def recover_label(): 
+	# This will recover the widget 
+	label.pack() 
 
-root.mainloop()
+
+# hide_label() function hide the label temporarily 
+B2 = Button(root, text="Click To Hide label", fg="red", command=hide_label) 
+B2.pack() 
+
+# recover_label() function recover the label 
+B1 = Button(root, text="Click To Show label", 
+			fg="green", command=recover_label) 
+B1.pack() 
+
+# pack Label widget 
+label.pack() 
+
+# Start the GUI 
+root.mainloop() 
