@@ -1,0 +1,32 @@
+                    ______ A (Formation avec conduite accompagnée) ______
+                   |                                                 |
+        _______ R₁ (Réussite à la 1ère présentation)      R₂ (Réussite à la 2ème présentation)
+       |                           |                                     |
+    50/75                      25/75                                 50/75
+       |                           |                                     |
+       |                           |                                     |
+       |                           |                                     |
+       V                           V                                     V
+    25/75                      50/75                                 25/75
+       |                           |                                     |
+       |                           |                                     |
+  _______ R₃ (Réussite à la 3ème présentation)                       Fin
+ |                               |
+50/75                           25/75
+ |                               |
+ V                               V
+ Fin                            Fin
+
+                    ______ B (Formation traditionnelle) ______
+                   |                                       |
+        _______ R₁ (Réussite à la 1ère présentation)      R₂ (Réussite à la 2ème présentation)       R₃ (Réussite à la 3ème présentation)
+       |                           |                                     |                                      |
+   100/225                     75/225                                225                                0/225
+       |                           |                                     |                                      |
+       |                           |                                     |                                      |
+  _______ Fin                  _______ Fin                           _______ Fin                          _______ Fin
+ |                               |                                     |                                      |
+0/225                           75/225                                50/225                                100/225
+ |                               |                                     |                                      |
+ V                               V                                     V                                      V
+ Fin                            Fin                                   Fin                                    Fin
